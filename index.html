@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-OM - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/every.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="bigcontainer">
+        <div class="left border bg-black font700">
+            <div class="close">
+                <img  src="mysvgs/close.svg" alt="">
+            </div>
+            <div class="home bg-grey border-radius">
+                <img class="invert " src="mysvgs/logo.svg" alt="">
+                <ul>
+                    <li class="greyhover"> <img class="invert " src="mysvgs/home.svg" alt=""> Home</li>
+                    <li class="greyhover"><img class="invert " src="mysvgs/search.svg" alt="">Search</li>
+                </ul>
+            </div>
+            <div style="scrollbar-width: none;" class="library bg-grey border-radius scrol" id="om">
+                <div class="heading greyhover"><span><img class="invert" src="mysvgs/library.svg" alt="">Your library</span>
+                    <img style="width: 16px;" class="invert" src="mysvgs/plus.svg" alt="">
+                </div>
+
+
+                <div class="firstbox boxlibrary border-radius m-1">
+                    <div class="largefont">Create your first playlist</div>
+                    <div class="smallfont">It's easy, we'll help you</div>
+                    <div class="buttons" style="margin-top: 10px; "> <button id="myplalist"
+                            style="width: 150px;background-color: rgb(255, 255, 255);color: black;">MY PLAYLIST</button>
+                    </div>
+                </div>
+                <div class="secbox boxlibrary border-radius m-1">
+                    <div class="largefont">Let's find some podcasts to follow </div>
+                    <div class="smallfont"> We'll keep you updated on new episodes</div>
+
+                </div>
+                <div class="footer">
+                    <div>
+                        <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                        <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                        <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                        <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                        </div>
+                        <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="right border-radius bg-grey">
+            <div class="header">
+                <div class="nav">
+                    <div class="flex backnext" ><div class="hamburgar bigham"><img src="mysvgs/library.svg" alt=""></div>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
+                            stroke="#4b4949" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9 18L14.2929 12.7071C14.6262 12.3738 14.7929 12.2071 14.7929 12C14.7929 11.7929 14.6262 11.6262 14.2929 11.2929L9 6"
+                            stroke="#4b4949" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></div>
+                    
+                </div>
+                <div class="buttons">
+                    <button>Sign up</button>
+                    <button>Login</button>
+                </div>
+            </div>
+            <div  class="spotifyplaylist border-radius scrol">
+                <div class="chamber">
+                    <div class="head">
+                        <h2 class="hover">Spotify Playlists</h2>
+                        <span>show all</span>
+                    </div>
+                    <div style="scrollbar-width: none;" class="container scrol">
+                        <!-- <div data-folder="Glory" class="cards  border-radius">
+                            <svg class="playbutton" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                                viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="#3be477" />
+                                <polygon points="35,25 35,75 70,50" fill="black" />
+                            </svg>
+                            <img class="border-radius"
+                                src="https://i.scdn.co/image/ab67616d00001e02aad3f4b601ae8763b3fc4e88" alt="error">
+                            <div class="tit hover" >Glory</div>
+                            <p class="smallfont hover lightgrey">Yo Yo Honey Singh</p>
+                        </div>
+                        <div data-folder="Aashiqui" class="cards  border-radius">
+                            <svg class="playbutton" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                                viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="#3be477" />
+                                <polygon points="35,25 35,75 70,50" fill="black" />
+                            </svg>
+                            <img class="border-radius"
+                                src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3" alt="error">
+                            <div class="tit hover">Aashiqui 2
+                            </div>
+                            <p class="smallfont hover lightgrey">Mithoon, Ankit Tiwari, Jeet Gannguli</p>
+                        </div>
+                         -->
+                        
+                       
+                    </div>
+                </div>
+
+                <div class="chamber">
+                    <div class="head">
+                        <h2 class="hover">Spotify Playlists</h2>
+                        <span>show all</span>
+                    </div>
+                    <div style="scrollbar-width: none;" class="container scrol">
+                        <div class="cards  border-radius">
+                            <svg class="playbutton " xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                                viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="#3be477" />
+                                <polygon points="35,25 35,75 70,50" fill="black" />
+                            </svg>
+                            <img class="border-radius"
+                                src="./myimages/1.jpg" alt="error">
+                            <div class="tit hover">Aaj Ki Raat (From "Stree 2")</div>
+                            <p class="smallfont hover lightgrey">Sachin-Jigar, Amitabh Bhattacharya</p>
+                        </div>
+                        <div class="cards  border-radius">
+                            <svg class="playbutton" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                                viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="#3be477" />
+                                <polygon points="35,25 35,75 70,50" fill="black" />
+                            </svg>
+                            <img class="border-radius"
+                                src="https://i.scdn.co/image/ab67616d00001e02aad3f4b601ae8763b3fc4e88" alt="error">
+                            <div class="tit hover">Glory</div>
+                            <p class="smallfont hover lightgrey">Yo Yo Honey Singh</p>
+                        </div>
+                        <div class="cards  border-radius">
+                            <svg class="playbutton" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                                viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="#3be477" />
+                                <polygon points="35,25 35,75 70,50" fill="black" />
+                            </svg>
+                            <img class="border-radius"
+                                src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3" alt="error">
+                            <div class="tit hover">Aashiqui 2
+                            </div>
+                            <p class="smallfont hover lightgrey">Mithoon, Ankit Tiwari, Jeet Gannguli</p>
+                        </div>
+                        <div class="cards  border-radius">
+                            <svg class="playbutton" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                                viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="#3be477" />
+                                <polygon points="35,25 35,75 70,50" fill="black" />
+                            </svg>
+                            <img class="border-radius"
+                                src="https://i.scdn.co/image/ab67616d00001e0272a77d038887cdc425f5ee55" alt="error">
+                            <div class="tit hover">Jo Tum Mere Ho
+                            </div>
+                            <p class="smallfont hover lightgrey">Anuv Jain</p>
+                        </div>
+                        <div class="cards  border-radius">
+                            <svg class="playbutton" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                                viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="#3be477" />
+                                <polygon points="35,25 35,75 70,50" fill="black" />
+                            </svg>
+                            <img class="border-radius"
+                                src="https://i.scdn.co/image/ab67616d00001e02bb25239324c4e16ae01fda36" alt="error">
+                            <div class="tit hover">Making Memories
+
+                            </div>
+                            <p class="smallfont hover lightgrey"> Karan Aujla, Ikky</p>
+                        </div>
+                        <div class="cards  border-radius">
+                            <svg class="playbutton" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                                viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="#3be477" />
+                                <polygon points="35,25 35,75 70,50" fill="black" />
+                            </svg>
+                            <img class="border-radius"
+                                src="https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4" alt="error">
+                            <div class="tit hover">Yeh Jawaani Hai Deewani
+
+                            </div>
+                            <p class="smallfont hover lightgrey"> Pritam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chamber">
+                    <div class="head">
+                        <h2 class="hover">Spotify Playlists</h2>
+                        <span>show all</span>
+                    </div>
+                    <div style="scrollbar-width: none;" class="container scrol">
+                        <div class="cards  border-radius">
+                            <svg class="playbutton " xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                                viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="#3be477" />
+                                <polygon points="35,25 35,75 70,50" fill="black" />
+                            </svg>
+                            <img class="border-radius"
+                                src="./myimages/2.jpg" alt="error">
+                            <div class="tit hover"> Raanjhan (From "Do Patti")</div>
+                            <p class="smallfont hover lightgrey">Sachet-Parampara, Parampara </p>
+                        </div>
+                        <div class="cards  border-radius">
+                            <svg class="playbutton" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                                viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="#3be477" />
+                                <polygon points="35,25 35,75 70,50" fill="black" />
+                            </svg>
+                            <img class="border-radius"
+                                src="./myimages/3.jpg" alt="error">
+                            <div class="tit hover">Kabir Singh</div>
+                            <p class="smallfont hover lightgrey">Sachet-Parampara, Vishal Mishra, Mithoon</p>
+                        </div>
+                        <div class="cards  border-radius">
+                            <svg class="playbutton" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                                viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="#3be477" />
+                                <polygon points="35,25 35,75 70,50" fill="black" />
+                            </svg>
+                            <img class="border-radius"
+                                src="./myimages/4.jpg" alt="error">
+                            <div class="tit hover">Chuttamalle (From "Devara Part 1")
+                            </div>
+                            <p class="smallfont hover lightgrey">Shilpa Rao, Anirudh Ravichander, Ramajogayya Sastry  </p>
+                        </div>
+                        <div class="cards  border-radius">
+                            <svg class="playbutton" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                                viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="#3be477" />
+                                <polygon points="35,25 35,75 70,50" fill="black" />
+                            </svg>
+                            <img class="border-radius"
+                                src="./myimages/5.jpg" alt="error">
+                            <div class="tit hover">ANIMAL            </div>
+                            <p class="smallfont hover lightgrey">Manan Bhardwaj, Vishal Mishra, Jaan</p>
+                        </div>
+                        <div class="cards  border-radius">
+                            <svg class="playbutton" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                                viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="#3be477" />
+                                <polygon points="35,25 35,75 70,50" fill="black" />
+                            </svg>
+                            <img class="border-radius"
+                                src="./myimages/6.jpg" alt="error">
+                            <div class="tit hover">Still Rollin
+                            </div>
+                            <p class="smallfont hover lightgrey"> Shubh</p>
+                        </div>
+                        <div class="cards  border-radius">
+                            <svg class="playbutton" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                                viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="#3be477" />
+                                <polygon points="35,25 35,75 70,50" fill="black" />
+                            </svg>
+                            <img class="border-radius"
+                                src="./myimages/7.jpg" alt="error">
+                            <div class="tit hover">Jab We Met
+                            </div>
+                            <p class="smallfont hover lightgrey">Pritam, Irshad Kamil, Sandesh Shandilya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+    </div>
+    <div class="playbar">
+            <div class="seekbar">
+                <div class="seekbar-progress"></div>
+                <div class="circle">
+
+                </div>
+                <div class="timeduration"></div>
+            </div>
+            <div class="info "><img  src="mainimg.jpg" alt="error">
+         <div class="information">
+
+        </div>
+            </div>
+            <div class="playbarbuttons">
+                <img id="prev" class="pointer" src="mysvgs/prev.svg" alt="">
+                <img id="play" class="pointer" src="mysvgs/playbutton.svg" alt="">
+                <img id="next" class="pointer" src="mysvgs/next.svg" alt="">
+            </div>
+
+
+            <div class="volume"> <img style="cursor: pointer;" class="invert "  src="mysvgs/volume.svg" alt="">
+                <div class="range" >
+                    <input type="range" name="volume" id="seekbar">
+                </div>
+            </div>
+        </div>
+        <div class="green">
+            om's spotify.......
+        </div>
+   
+    <script src="main.js"></script>
+</body>
+
+</html>

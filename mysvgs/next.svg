@@ -1,0 +1,6 @@
+<svg class="nextbutton" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 100 100">
+  <!-- Right-facing triangle -->
+  <polygon points="30,25 30,75 65,50" fill="darkgrey" />
+  <!-- Vertical bar -->
+  <rect x="70" y="25" width="10" height="50" fill="darkgrey" />
+</svg>

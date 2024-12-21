@@ -1,0 +1,6 @@
+<svg class="prevbutton" id="pre" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 100 100">
+  <!-- Left-facing triangle -->
+  <polygon points="70,25 70,75 35,50" fill="darkgrey" />
+  <!-- Vertical bar -->
+  <rect x="20" y="25" width="10" height="50" fill="darkgrey" />
+</svg>
