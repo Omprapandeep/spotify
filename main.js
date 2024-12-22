@@ -18,7 +18,7 @@ function secondsToMinutesSeconds(seconds) {
 
 let currentsong = new Audio()
 async function gethtml() {
-    let b = await fetch("change.html")
+    let b = await fetch("/change.html")
     let res = await b.text()
 
     document.getElementById("myplalist").addEventListener("click", async () => {
@@ -32,7 +32,7 @@ async function gethtml() {
 
 }
 async function getSongs(folder) {
-    let a = await fetch(`./${folder}`)
+    let a = await fetch(`/${folder}`)
     currfolder=folder
     let response = await a.text();
     // console.log(response)
@@ -89,7 +89,7 @@ async function getSongs(folder) {
 }
 async function displayAlbums() {
     console.log("display albumbs");
-    let a = await fetch(`./songs`)
+    let a = await fetch(`/songs`)
     let response = await a.text();
     // console.log(response)
     let div = document.createElement("div")
@@ -102,7 +102,7 @@ async function displayAlbums() {
         console.log(e.href.includes(`\songs`))
         if (e.href.includes(`\songs`)&& !e.href.includes(".htaccess")) {
             let folder = e.href.split("/").slice(-2)[0]
-            let a = await fetch(`./songs/${folder}/info.json`)
+            let a = await fetch(`/songs/${folder}/info.json`)
             let response = await a.json();
             cardcontainer.innerHTML = cardcontainer.innerHTML + `<div data-folder="${folder}" class="cards  border-radius">
                             <svg class="playbutton" xmlns="http://www.w3.org/2000/svg" width="100" height="100"  
@@ -124,7 +124,7 @@ async function displayAlbums() {
 }
 async function img() {
 
-    let a = await fetch("./img")
+    let a = await fetch("/img")
     let response = await a.text()
     let div = document.createElement("div")
     div.innerHTML = response
